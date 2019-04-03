@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>js 17 if arrays</title>
+        <meta charset="UTF-8">
+        </head>
+        <body>
+        <div id="e1">Viso = </div>
+        <div id="e2">Vidurkis = </div>
+        <br><br><br><br><br><br><br>
+
+        <script>
+
+
+        var masyvas = [ 22, 64, 0, -55, 4, 7, -1, 8, -66 ];
+        var i = 0;
+        var suma = 0;
+        var masyvoilgis = masyvas.length;
+        console.log(masyvoilgis);
+
+        while (i < masyvoilgis) {
+                console.log(masyvas[i]);
+                suma = suma + masyvas[i];
+                console.log('CIA SUMA MANO=' + suma);
+
+                i++;
+        }
+
+        var vidurkis = suma / masyvoilgis;
+        console.log('VIDURKIS=' + vidurkis);
+        var vidurkis = Math.round(vidurkis);
+
+
+        document.getElementById('e1').innerHTML += suma;
+        document.getElementById('e2').innerHTML += vidurkis;
+
+
+
+
+        // Surasti mažiausią skaičių
+        var balai = [ 12, 45, 0, -100, 5, 6, -1 ];
+        var i = 0;
+        var sum = 0; 
+        var masyvoilgis = balai.length;
+        var maziausias = 9999999;
+     //   console.log(masyvoilgis);
+
+
+        while (i < masyvoilgis) {
+     //           console.log('iteracija:' + i);
+      //          console.log(balai[i])
+
+                if(balai[i] < maziausias) {
+                      var  maziausias = balai[i];
+                }
+
+                i++;
+        }
+
+    //    console.log('mazaiusias masyvo balu skaicius:' + maziausias);
+
+
+
+
+      /*          
+
+        // Paaiškinimui
+        var i = 50;
+        var suma = 0;
+        while (i < 5) {
+                suma += i;
+                console.log('iteracija:' + i);
+                console.log('Suma:' + suma);
+                i++
+        };
+
+/*
+        console.log('Viso:' + suma);
+        // Paaiškinimui
+        var i = 0;
+        var suma = 0;
+        while (i < 5) {
+                suma += i;
+                console.log('iteracija:' + i);
+                console.log('Suma:' + suma);
+                
+                // Pridedu vientą (Kas būtų jeigu 1 nepridėčiau?)
+                i = i + 1;
+                // i++
+        };
+
+        console.log('Viso:' + suma);
+*/
+
+
+/*
+        // Suskaičiuoti sumą
+        var i = 0;
+        var suma = 0;
+        while (i < 5) {
+                console.log(suma);
+                suma += i++;
+                console.log('veikiu:' + suma);
+        };
+        console.log('Viso:' + suma);
+*/
+
+/*
+        // Uždavinys klasėje
+        var m = [ 12, 45, 0, -100, 5, 6, -1 ];
+        var viso = 0;
+        var i = 0;
+        var kiekskaiciu = m.length;
+        console.log('m.lenght lygu:' +  m.length);
+        while (i < m.length) {
+                viso += m[i];
+                viso = viso + m[i];
+                console.log('Viso:' + viso);
+                console.log('i:' + i);
+                i++;
+        }
+        var vidurkis = viso / m.length;
+        document.getElementById('e1').innerHTML += viso;
+        document.getElementById('e2').innerHTML += vidurkis;
+*/
+
+        </script>
+	</body>
+</html>

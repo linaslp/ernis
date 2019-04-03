@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>js 17 if arrays</title>
+        <meta charset="UTF-8">
+	</head>
+	<body>
+        <div id="e1">Labas rytas</div>
+        <div id="e2">Labas rytas</div>
+        <br><br><br><br><br><br><br>
+        <p id="demo"></p>
+
+
+        <script>
+              
+
+
+                for (i = 1; i <= 20; i++) { 
+                        console.log('i:' + i)
+                        
+                        if (i && (i % 4 === 0)) {
+                                console.log('i-kas4:' + i);
+                        }
+                }
+
+
+
+
+/*
+
+
+       var masyvas = [ 22, 64, 0, -55, 4, 7, -1, 8, -66 ];
+        var suma = 0;
+
+        for (i = 0; i < masyvas.length; i += 2) {
+             
+                suma += masyvas[i];
+                console.log(suma);
+        }
+
+
+        vidurkis = suma / masyvas.length;
+        console.log('VIDURKIS' + vidurkis);
+
+
+
+
+
+
+
+
+
+/*
+
+                // paprastas                   
+                var i;
+                var suma = 0;
+                for (i = 0; i < 15; i++) { 
+                        suma += i;
+                      //  console.log('i:' + i)
+                     //   console.log('Sumuojam:' + suma)
+                }
+            //    console.log('Viso pirmas ciklas:' + suma)
+
+
+
+
+/*
+                // Su klaida begalinis                   
+                var i;
+                var suma = 0;
+                for (i = 16; i > 15; i++) { 
+                        suma += i;
+                        console.log('i:' + i)
+                     //   console.log('Sumuojam:' + suma)
+                }
+                console.log('Viso pirmas ciklas:' + suma)
+*/
+
+ /*
+                // Kas antrą žingsniai
+                var i;
+                var suma = 0;
+                for (i = 0; i < 15; i += 2) { 
+                        suma += i;
+                        console.log('i pirmo:' + suma)
+                }
+                console.log('Viso pirmas ciklas:' + suma)
+
+ 
+
+                var cars = ["BMW", "Volvo", "Saab", "Ford"];
+                var i, len, text;
+                for (i = 0, len = cars.length, text = ""; i < len; i++) {
+                text += cars[i] + "<br>";
+                }
+
+                document.getElementById("demo").innerHTML = text;
+
+
+
+
+
+
+
+                var i = 0;
+                var suma = 0;
+                for (i = 1; suma < 5; i++) {
+                        suma += i;
+                        i += 2;
+
+                        console.log('i antro:' + suma)
+                }
+                console.log('Viso antras ciklas:' + suma)
+                
+     */
+     
+
+       
+        </script>
+	</body>
+</html>
